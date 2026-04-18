@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="OrbitalBody" format=3 uid="uid://dlug4pn2d365v"]
+
+[ext_resource type="Script" uid="uid://w7cu6kl0qor1" path="res://OrbitCalculations/orbital_body.gd" id="1_ii26x"]
+
+[resource]
+script = ExtResource("1_ii26x")
+body_name = "venus"
+radius = 6051.8
+a = 0.72333566
+e = 0.00677672
+I = 3.39467605
+L = 181.9790995
+long_peri = 131.60246718
+long_node = 76.67984255
+rate_a = 3.9e-06
+rate_e = -4.107e-05
+rate_I = -0.0007889
+rate_L = 58517.81538729
+rate_long_peri = 0.00268329
+rate_long_node = -0.27769418

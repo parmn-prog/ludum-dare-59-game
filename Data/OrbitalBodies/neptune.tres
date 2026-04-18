@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="OrbitalBody" format=3 uid="uid://ben1aivv0gut5"]
+
+[ext_resource type="Script" uid="uid://w7cu6kl0qor1" path="res://OrbitCalculations/orbital_body.gd" id="1_17w7j"]
+
+[resource]
+script = ExtResource("1_17w7j")
+body_name = "neptune"
+radius = 24622.0
+a = 30.06992276
+e = 0.00859048
+I = 1.77004347
+L = -55.12002969
+long_peri = 44.96476227
+long_node = 131.78422574
+rate_a = 0.00026291
+rate_e = 5.105e-05
+rate_I = 0.00035372
+rate_L = 218.45945325
+rate_long_peri = -0.32241464
+rate_long_node = -0.00508664

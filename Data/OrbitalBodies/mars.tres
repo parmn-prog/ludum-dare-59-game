@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="OrbitalBody" format=3 uid="uid://db3lfxwu34sh2"]
+
+[ext_resource type="Script" uid="uid://w7cu6kl0qor1" path="res://OrbitCalculations/orbital_body.gd" id="1_6k2ny"]
+
+[resource]
+script = ExtResource("1_6k2ny")
+body_name = "mars"
+radius = 3389.5
+a = 1.52371034
+e = 0.0933941
+I = 1.84969142
+L = 4.55343205
+long_peri = -23.94362959
+long_node = 49.55953891
+rate_a = 1.847e-05
+rate_e = 7.882e-05
+rate_I = -0.00813131
+rate_L = 19140.30268499
+rate_long_peri = 0.44441088
+rate_long_node = -0.29257343

@@ -1,0 +1,99 @@
+[gd_scene format=3 uid="uid://s1qe2k8sxlu"]
+
+[ext_resource type="Script" uid="uid://bbf30tvbj6hy2" path="res://space.gd" id="1_f3sb7"]
+[ext_resource type="Script" uid="uid://ue46fs3scjbr" path="res://earth.gd" id="2_fj7yv"]
+[ext_resource type="Resource" uid="uid://ikyl7504ke48" path="res://Data/OrbitalBodies/earth.tres" id="3_036b0"]
+[ext_resource type="Resource" uid="uid://bo765koue3ilg" path="res://Data/OrbitalBodies/mercury.tres" id="4_dwbse"]
+[ext_resource type="Resource" uid="uid://dlug4pn2d365v" path="res://Data/OrbitalBodies/venus.tres" id="5_pkg7o"]
+[ext_resource type="Resource" uid="uid://db3lfxwu34sh2" path="res://Data/OrbitalBodies/mars.tres" id="6_dwbse"]
+[ext_resource type="Resource" uid="uid://df1dqpwafun8o" path="res://Data/OrbitalBodies/jupiter.tres" id="7_wse8f"]
+[ext_resource type="Resource" uid="uid://bm1sic6pp5sqd" path="res://Data/OrbitalBodies/saturn.tres" id="8_ic0uy"]
+[ext_resource type="Resource" uid="uid://buqk3wnsl5cn6" path="res://Data/OrbitalBodies/uranus.tres" id="9_k3n1d"]
+[ext_resource type="Resource" uid="uid://ben1aivv0gut5" path="res://Data/OrbitalBodies/neptune.tres" id="10_2o6r5"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_fj7yv"]
+sky_top_color = Color(1, 1, 1, 1)
+sky_horizon_color = Color(0, 0, 0, 1)
+ground_bottom_color = Color(0, 0, 0, 1)
+ground_horizon_color = Color(0, 0, 0, 1)
+energy_multiplier = 10.0
+
+[sub_resource type="Sky" id="Sky_tlwt5"]
+sky_material = SubResource("ProceduralSkyMaterial_fj7yv")
+
+[sub_resource type="Environment" id="Environment_gv5m4"]
+background_mode = 2
+sky = SubResource("Sky_tlwt5")
+ambient_light_source = 3
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gv5m4"]
+albedo_color = Color(0.9395707, 0.6204995, 0, 1)
+
+[sub_resource type="SphereMesh" id="SphereMesh_f3sb7"]
+material = SubResource("StandardMaterial3D_gv5m4")
+radius = 2.381
+height = 4.762
+
+[sub_resource type="SphereMesh" id="SphereMesh_fj7yv"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_gbfbk"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_ioo17"]
+
+[node name="World" type="Node3D" unique_id=884627023]
+script = ExtResource("1_f3sb7")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=701845348]
+environment = SubResource("Environment_gv5m4")
+
+[node name="Node3D" type="Node3D" parent="." unique_id=784951839]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -512, 0, 0)
+
+[node name="Sun" type="MeshInstance3D" parent="." unique_id=464994204]
+mesh = SubResource("SphereMesh_f3sb7")
+
+[node name="Earth" type="MeshInstance3D" parent="." unique_id=1580689129]
+mesh = SubResource("SphereMesh_fj7yv")
+script = ExtResource("2_fj7yv")
+planet_body = ExtResource("3_036b0")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=657341341]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 15000, 0)
+far = 25000.0
+
+[node name="Mercury" type="MeshInstance3D" parent="." unique_id=1720084310]
+mesh = SubResource("SphereMesh_gbfbk")
+script = ExtResource("2_fj7yv")
+planet_body = ExtResource("4_dwbse")
+metadata/_custom_type_script = "uid://ue46fs3scjbr"
+
+[node name="Venus" type="MeshInstance3D" parent="." unique_id=1009665925]
+mesh = SubResource("SphereMesh_ioo17")
+script = ExtResource("2_fj7yv")
+planet_body = ExtResource("5_pkg7o")
+metadata/_custom_type_script = "uid://ue46fs3scjbr"
+
+[node name="Mars" type="MeshInstance3D" parent="." unique_id=719893412]
+script = ExtResource("2_fj7yv")
+planet_body = ExtResource("6_dwbse")
+metadata/_custom_type_script = "uid://ue46fs3scjbr"
+
+[node name="Jupiter" type="MeshInstance3D" parent="." unique_id=1204279465]
+script = ExtResource("2_fj7yv")
+planet_body = ExtResource("7_wse8f")
+metadata/_custom_type_script = "uid://ue46fs3scjbr"
+
+[node name="Saturn" type="MeshInstance3D" parent="." unique_id=1649287785]
+script = ExtResource("2_fj7yv")
+planet_body = ExtResource("8_ic0uy")
+metadata/_custom_type_script = "uid://ue46fs3scjbr"
+
+[node name="Uranus" type="MeshInstance3D" parent="." unique_id=1489750806]
+script = ExtResource("2_fj7yv")
+planet_body = ExtResource("9_k3n1d")
+metadata/_custom_type_script = "uid://ue46fs3scjbr"
+
+[node name="Neptune" type="MeshInstance3D" parent="." unique_id=987040363]
+script = ExtResource("2_fj7yv")
+planet_body = ExtResource("10_2o6r5")
+metadata/_custom_type_script = "uid://ue46fs3scjbr"

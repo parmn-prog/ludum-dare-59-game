@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="OrbitalBody" format=3 uid="uid://ikyl7504ke48"]
+
+[ext_resource type="Script" uid="uid://w7cu6kl0qor1" path="res://OrbitCalculations/orbital_body.gd" id="1_sh30k"]
+
+[resource]
+script = ExtResource("1_sh30k")
+body_name = "earth"
+radius = 6371.0
+a = 1.00000261
+e = 0.01671123
+I = -1.531e-05
+L = 100.46457166
+long_peri = 102.93768193
+rate_a = 5.62e-06
+rate_e = -4.392e-05
+rate_I = -0.01294668
+rate_L = 35999.37244981
+rate_long_peri = 0.32327364

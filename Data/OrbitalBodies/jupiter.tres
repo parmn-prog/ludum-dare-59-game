@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="OrbitalBody" format=3 uid="uid://df1dqpwafun8o"]
+
+[ext_resource type="Script" uid="uid://w7cu6kl0qor1" path="res://OrbitCalculations/orbital_body.gd" id="1_dhbi7"]
+
+[resource]
+script = ExtResource("1_dhbi7")
+body_name = "jupiter"
+radius = 69911.0
+a = 5.202887
+e = 0.04838624
+I = 1.30439695
+L = 34.39644051
+long_peri = 14.72847983
+long_node = 100.47390909
+rate_a = -0.00011607
+rate_e = -0.00013253
+rate_I = -0.00183714
+rate_L = 3034.74612775
+rate_long_peri = 0.21252668
+rate_long_node = 0.20469106

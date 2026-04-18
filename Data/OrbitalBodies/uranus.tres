@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="OrbitalBody" format=3 uid="uid://buqk3wnsl5cn6"]
+
+[ext_resource type="Script" uid="uid://w7cu6kl0qor1" path="res://OrbitCalculations/orbital_body.gd" id="1_adf3b"]
+
+[resource]
+script = ExtResource("1_adf3b")
+body_name = "uranus"
+radius = 25362.0
+a = 19.18916464
+e = 0.04725744
+I = 0.77263783
+L = 313.23810451
+long_peri = 170.9542763
+long_node = 74.01692503
+rate_a = -0.00196176
+rate_e = -4.397e-05
+rate_I = -0.00242939
+rate_L = 428.48202785
+rate_long_peri = 0.40805281
+rate_long_node = 0.04240589

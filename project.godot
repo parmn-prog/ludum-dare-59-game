@@ -14,6 +14,18 @@ config/name="ludumdare49"
 config/features=PackedStringArray("4.6", "Mobile")
 config/icon="res://icon.svg"
 
+[autoload]
+
+GameManager="*uid://cr8h3ljnq5h34"
+TimeManager="*uid://b88lj3vb172ln"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
 [physics]
 
 3d/physics_engine="Jolt Physics"
@@ -21,4 +33,3 @@ config/icon="res://icon.svg"
 [rendering]
 
 rendering_device/driver.windows="d3d12"
-renderer/rendering_method="mobile"

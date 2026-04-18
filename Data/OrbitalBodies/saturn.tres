@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="OrbitalBody" format=3 uid="uid://bm1sic6pp5sqd"]
+
+[ext_resource type="Script" uid="uid://w7cu6kl0qor1" path="res://OrbitCalculations/orbital_body.gd" id="1_71h6t"]
+
+[resource]
+script = ExtResource("1_71h6t")
+body_name = "saturn"
+radius = 58232.0
+a = 9.53667594
+e = 0.05386179
+I = 2.48599187
+L = 49.95424423
+long_peri = 92.59887831
+long_node = 113.66242448
+rate_a = -0.0012506
+rate_e = -0.00050991
+rate_I = 0.00193609
+rate_L = 1222.49362201
+rate_long_peri = -0.41897216
+rate_long_node = -0.28867794
